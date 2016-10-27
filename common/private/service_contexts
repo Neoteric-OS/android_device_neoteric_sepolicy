@@ -11,3 +11,6 @@ device_key_manager                        u:object_r:device_key_manager:s0
 
 # Linearmotor Vibrator
 linearmotor                               u:object_r:linearmotor_vibrator_service:s0
+
+# Pocket Mode
+pocket                                    u:object_r:pocket_service:s0
