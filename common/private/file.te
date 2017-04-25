@@ -2,3 +2,5 @@ type adbroot_data_file, file_type, data_file_type, core_data_file_type;
 
 # Define updater_ota_file type
 type updater_ota_file, file_type, data_file_type, core_data_file_type, mlstrustedobject;
+
+type pocket_judge_sysfs, fs_type, sysfs_type;
