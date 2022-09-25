@@ -6,3 +6,6 @@ type lineage_livedisplay_service, system_api_service, system_server_service, ser
 type app_lock_service, system_api_service, system_server_service, service_manager_type;
 
 type device_key_manager, system_api_service, system_server_service, service_manager_type;
+
+# Linearmotor Vibrator
+type linearmotor_vibrator_service, system_api_service, system_server_service, service_manager_type;

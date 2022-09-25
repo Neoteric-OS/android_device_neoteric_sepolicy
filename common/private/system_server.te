@@ -4,3 +4,9 @@ allow system_server adbroot_service:service_manager find;
 hal_client_domain(system_server, hal_lineage_fod)
 hal_client_domain(system_server, hal_lineage_livedisplay)
 hal_client_domain(system_server, hal_lineage_touch)
+
+# Let system server find auxiliary camera properties
+get_prop(system_server, vendor_persist_camera_prop)
+
+# Linearmotor Vibrator
+add_service(system_server, linearmotor_vibrator_service);
