@@ -10,20 +10,20 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/flamingo/sepolicy/common/public
+    device/zephyrus/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/flamingo/sepolicy/common/private
+    device/zephyrus/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/flamingo/sepolicy/common/dynamic \
-    device/flamingo/sepolicy/common/system
+    device/zephyrus/sepolicy/common/dynamic \
+    device/zephyrus/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/flamingo/sepolicy/common/dynamic \
-    device/flamingo/sepolicy/common/vendor
+    device/zephyrus/sepolicy/common/dynamic \
+    device/zephyrus/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/flamingo/sepolicy/legacy-common/sepolicy.mk
+-include device/zephyrus/sepolicy/legacy-common/sepolicy.mk
