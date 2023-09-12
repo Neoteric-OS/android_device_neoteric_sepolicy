@@ -10,20 +10,20 @@ endif
 endif
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
-    device/zephyrus/sepolicy/common/public
+    device/neoteric/sepolicy/common/public
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/zephyrus/sepolicy/common/private
+    device/neoteric/sepolicy/common/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/zephyrus/sepolicy/common/dynamic \
-    device/zephyrus/sepolicy/common/system
+    device/neoteric/sepolicy/common/dynamic \
+    device/neoteric/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/zephyrus/sepolicy/common/dynamic \
-    device/zephyrus/sepolicy/common/vendor
+    device/neoteric/sepolicy/common/dynamic \
+    device/neoteric/sepolicy/common/vendor
 endif
 
 # Selectively include legacy rules defined by the products
--include device/zephyrus/sepolicy/legacy-common/sepolicy.mk
+-include device/neoteric/sepolicy/legacy-common/sepolicy.mk
