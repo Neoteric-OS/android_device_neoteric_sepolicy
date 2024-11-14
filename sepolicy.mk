@@ -12,11 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
+ifeq ($(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE),)
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY ?= true
+endif
+endif
+
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/neoteric/sepolicy/private
 
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/neoteric/sepolicy/public
+
+ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/neoteric/sepolicy/dynamic
+else
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    device/neoteric/sepolicy/dynamic
+endif
 
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/neoteric/sepolicy/vendor

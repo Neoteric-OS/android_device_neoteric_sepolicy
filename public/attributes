@@ -1,14 +1,4 @@
 # HALs
-attribute hal_lineage_powershare;
-expandattribute hal_lineage_powershare true;
-attribute hal_lineage_powershare_client;
-expandattribute hal_lineage_powershare_client true;
-attribute hal_lineage_powershare_server;
-expandattribute hal_lineage_powershare_server false;
-attribute hal_lineage_health;
-expandattribute hal_lineage_health true;
-attribute hal_lineage_health_client;
-expandattribute hal_lineage_health_client true;
-attribute hal_lineage_health_server;
-expandattribute hal_lineage_health_server false;
-
+hal_attribute_lineage(lineage_powershare)
+hal_attribute_lineage(lineage_health)
+hal_attribute_lineage(lineage_touch)
