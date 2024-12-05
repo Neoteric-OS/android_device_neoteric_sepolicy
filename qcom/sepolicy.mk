@@ -14,8 +14,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/neoteric/sepolicy/qcom/dynamic \
-    device/neoteric/sepolicy/qcom/system
+    device/neoteric/sepolicy/qcom/dynamic
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/neoteric/sepolicy/qcom/dynamic \
