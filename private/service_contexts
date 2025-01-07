@@ -9,3 +9,6 @@ lineagehealth                               u:object_r:lineage_health_interface_
 
 # App lock
 app_lock                                  u:object_r:app_lock_service:s0
+
+# PowerShare
+power_share                               u:object_r:powershare_manager_service:s0

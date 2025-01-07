@@ -27,3 +27,6 @@ hal_client_domain(system_server, hal_lineage_fastcharge)
 
 # App lock
 add_service(system_server, app_lock_service);
+
+# PowerShare
+add_service(system_server, powershare_manager_service);
