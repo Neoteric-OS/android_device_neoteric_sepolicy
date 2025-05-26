@@ -30,3 +30,6 @@ add_service(system_server, app_lock_service);
 
 # PowerShare
 add_service(system_server, powershare_manager_service);
+
+# Let system server toggle xtra-daemon
+set_prop(system_server, xtra_control_prop)
